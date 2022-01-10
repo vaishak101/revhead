@@ -1,0 +1,15 @@
+//abstracts
+@import "abstracts/mixin";
+@import "abstracts/variables";
+//base
+@import "base/animations";
+@import "base/base";
+@import "base/typography";
+//COMPONENTS
+@import "components/buttons";
+//layouts
+@import "layouts/footer";
+@import "layouts/grid";
+@import "layouts/header";
+//PAGES
+@import "pages/home";
