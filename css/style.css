@@ -354,6 +354,77 @@ body {
   width: 75rem;
 }
 
+.card {
+  position: relative;
+  height: 30rem;
+  perspective: 150rem;
+}
+.card__side {
+  height: 30rem;
+  width: 100%;
+  font-size: 2rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
+  transition: all 0.8s ease;
+  border-radius: 5px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card__side--front {
+  background-color: #6247aa;
+  background-image: linear-gradient(316deg, #6247aa 0%, #a594f9 74%);
+}
+.card__side--back {
+  transform: rotateY(180deg);
+  background-color: #cdc1ff;
+  background-image: linear-gradient(316deg, #cdc1ff 0%, #e5d9f2 74%);
+  flex-direction: column;
+  padding: 2rem 3rem;
+}
+.card:hover .card__side--front {
+  transform: rotateY(-180deg);
+  box-shadow: 0 1.5rem 4rem #d270ff;
+}
+.card:hover .card__side--back {
+  transform: rotateY(0);
+  box-shadow: 0 1.5rem 4rem #d270ff;
+}
+
+.acc__img {
+  width: 100%;
+}
+.acc__name {
+  font-size: 3rem;
+  color: black;
+  font-weight: 900;
+  letter-spacing: 0.2rem;
+  transition: color 0.2s ease;
+}
+.acc__name:hover {
+  color: #8c34b4;
+}
+.acc__ul {
+  list-style-type: square;
+}
+.acc__li {
+  font-size: 1.3rem;
+}
+.acc__btn {
+  padding: 1rem;
+  border: none;
+  background-color: black;
+  color: #8c34b4;
+  letter-spacing: 0.2rem;
+  transition: all 0.2s;
+}
+.acc__btn:hover {
+  color: #d270ff;
+}
+
 .row {
   max-width: 114rem;
   margin: 0 auto;
@@ -512,6 +583,11 @@ body {
   background-image: url(/img/c-bikes/custom-bg.webp);
   background-position: center;
   background-size: cover;
+}
+
+.accessories {
+  padding: 0 10rem 10rem 10rem;
+  background-image: linear-gradient(0deg, #5f0a87 14%, black 79%);
 }
 
 /*# sourceMappingURL=style.css.map */

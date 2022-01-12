@@ -20,3 +20,11 @@
   background-size: cover;
   // padding-bottom: 10rem;
 }
+.accessories {
+  padding: 0 10rem 10rem 10rem;
+  background-image: linear-gradient(
+    0deg,
+    $color-grad-1--col-1 14%,
+    $color-primary-black 79%
+  );
+}
