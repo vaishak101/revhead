@@ -271,6 +271,89 @@ body {
   display: none;
 }
 
+.slider {
+  max-width: 100rem;
+  height: 100vh;
+  margin: 0 auto;
+  position: relative;
+  padding-bottom: 5rem;
+  overflow: hidden;
+}
+.slider__btn {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  border: none;
+  background-color: #6247aa;
+  background-image: linear-gradient(316deg, #6247aa 0%, #a594f9 74%);
+  font-family: inherit;
+  height: 5.5rem;
+  width: 5.5rem;
+  font-size: 3.25rem;
+  cursor: pointer;
+}
+.slider__btn:hover {
+  background-color: #cdc1ff;
+  background-image: linear-gradient(316deg, #cdc1ff 0%, #e5d9f2 74%);
+}
+.slider__btn--left {
+  left: 6%;
+  transform: translate(-50%, -50%);
+  clip-path: polygon(0 50%, 100% 100%, 100% 0);
+}
+.slider__btn--right {
+  right: 6%;
+  transform: translate(50%, -50%);
+  clip-path: polygon(100% 50%, 0 100%, 0 0);
+}
+
+.slide {
+  width: 100%;
+  height: 80vh;
+  position: absolute;
+  top: 0%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 1s ease;
+}
+.slide_content {
+  width: 55%;
+  padding: 3rem 5rem;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.details-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  position: absolute;
+  bottom: -10%;
+}
+.details-box--h1 {
+  color: red;
+}
+.details-box--num {
+  color: #d270ff;
+  font-size: 2.5rem;
+}
+.details-box--span {
+  font-size: 1.5rem;
+  color: yellow;
+}
+
+.custom__img {
+  width: 70rem;
+  transition: width 0.5s;
+}
+.custom__img:hover {
+  width: 75rem;
+}
+
 .row {
   max-width: 114rem;
   margin: 0 auto;
@@ -416,11 +499,19 @@ body {
 .container {
   max-width: 114rem;
   padding: 3rem 2rem;
+  margin: 0 auto;
 }
 
 .features {
   background-image: linear-gradient(0deg, black 5%, #5f0a87 95%);
-  padding-bottom: 10rem;
+  padding-bottom: 25rem;
+}
+
+.customs {
+  padding: 4rem 0 10rem 0;
+  background-image: url(/img/c-bikes/custom-bg.webp);
+  background-position: center;
+  background-size: cover;
 }
 
 /*# sourceMappingURL=style.css.map */

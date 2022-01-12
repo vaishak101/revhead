@@ -2,6 +2,7 @@
   max-width: 114rem;
   padding: 3rem 2rem;
   // height: 100rem;
+  margin: 0 auto;
 }
 
 .features {
@@ -10,5 +11,12 @@
     $color-primary-black 5%,
     $color-grad-1--col-1 95%
   );
-  padding-bottom: 10rem;
+  padding-bottom: 25rem;
+}
+.customs {
+  padding: 4rem 0 10rem 0;
+  background-image: url(/img/c-bikes/custom-bg.webp);
+  background-position: center;
+  background-size: cover;
+  // padding-bottom: 10rem;
 }
