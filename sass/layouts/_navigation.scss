@@ -1,0 +1,25 @@
+.nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 3rem 3.5rem;
+  animation: FadeIn 12s;
+  &__ul {
+    @include flex-space-bw;
+  }
+  &__link:link,
+  &__link:visited {
+    color: $color-purple;
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: color 0.2s;
+    font-weight: 700;
+  }
+
+  &__link:hover,
+  &__link:active {
+    color: $color-purple-light;
+    border-bottom: 3px solid $color-purple-light;
+  }
+}
