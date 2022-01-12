@@ -5,7 +5,7 @@
     $color-grad-1--col-1 14%,
     $color-primary-black 79%
   );
-
+  overflow: hidden;
   // background: linear-gradient(
   //   0deg,
   //   rgba(0, 56, 56, 1) 14%,
@@ -13,15 +13,16 @@
   // );
 }
 .hero {
-  height: 100vh;
+  height: 100%;
   animation: openUp 9s;
   clip-path: circle(16% at 50% 50%);
+  position: relative;
 }
 .background-video {
   width: 100vw;
   height: 100vh;
   object-fit: cover;
-  position: fixed;
+  position: absolute;
   left: 0;
   right: 0;
   top: 0;
@@ -37,13 +38,16 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: $color-primary-black;
+  // background-color: $color-primary-black;
   width: 350px;
   height: 350px;
   border-radius: 50%;
   @include flex-col-start;
-  z-index: -2;
+  z-index: -1;
+  animation: FadeOut 24s ease;
+  animation-iteration-count: infinite;
 }
+
 .hero-heading {
   color: $color-primary-white;
   animation: FadeIn 10s;

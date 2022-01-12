@@ -1,3 +1,11 @@
+@mixin clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
 //Flex
 @mixin flex-col-start {
   display: flex;
@@ -10,4 +18,32 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
+}
+// MEDIA QUERY Manager
+@mixin respond($breakpoint) {
+  @if $breakpoint== small-phone {
+    @media (max-width: 28.25em) {
+      @content;
+    }
+  }
+  @if $breakpoint== phone {
+    @media (max-width: 37.5em) {
+      @content;
+    }
+  }
+  @if $breakpoint== tab-port {
+    @media (max-width: 56.25em) {
+      @content;
+    }
+  }
+  @if $breakpoint== tab-land {
+    @media (max-width: 75em) {
+      @content;
+    }
+  }
+  @if $breakpoint== big-desktop {
+    @media (min-width: 112.5em) {
+      @content;
+    }
+  }
 }

@@ -20,6 +20,20 @@
     opacity: 1;
   }
 }
+@keyframes FadeOut {
+  0% {
+    background-color: $color-primary-black;
+  }
+  50% {
+    background-color: $color-primary-black;
+  }
+  75% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: $color-primary-black;
+  }
+}
 @keyframes HeroImg {
   0% {
     width: 520px;

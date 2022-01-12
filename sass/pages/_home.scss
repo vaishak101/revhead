@@ -1,0 +1,14 @@
+.container {
+  max-width: 114rem;
+  padding: 3rem 2rem;
+  // height: 100rem;
+}
+
+.features {
+  background-image: linear-gradient(
+    0deg,
+    $color-primary-black 5%,
+    $color-grad-1--col-1 95%
+  );
+  padding-bottom: 10rem;
+}
