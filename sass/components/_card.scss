@@ -62,15 +62,4 @@
   &__li {
     font-size: 1.3rem;
   }
-  &__btn {
-    padding: 1rem;
-    border: none;
-    background-color: $color-primary-black;
-    color: $color-purple;
-    letter-spacing: 0.2rem;
-    transition: all 0.2s;
-    &:hover {
-      color: $color-purple-light;
-    }
-  }
 }

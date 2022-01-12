@@ -63,3 +63,29 @@ document.addEventListener('keydown', function (e) {
     nextSlide();
   }
 });
+//CTA
+const ctaCont = document.querySelector('.form_img--cont');
+const Imglabel = document.querySelector('.form__label--img');
+ctaCont.addEventListener('click', function (e) {
+  if (e.target.classList.contains('cta--img')) {
+    Imglabel.textContent = e.target.getAttribute('data-value');
+  } else {
+    return;
+  }
+});
+//Smooth scroll
+document.querySelector('.nav__ul').addEventListener('click', function (e) {
+  if (e.target.classList.contains('nav__link')) {
+    e.preventDefault();
+    // hideMobNav();
+    let id = e.target.getAttribute('href');
+    let sid = document.querySelector(id);
+    let idcord = sid.getBoundingClientRect();
+    // revealSection();
+    window.scrollTo({
+      left: idcord.left + window.pageXOffset,
+      top: idcord.top + window.pageYOffset,
+      behavior: 'smooth',
+    });
+  }
+});

@@ -28,3 +28,12 @@
     $color-primary-black 79%
   );
 }
+.cta {
+  padding: 0 10rem 10rem 10rem;
+
+  background-image: linear-gradient(
+    0deg,
+    $color-primary-black 14%,
+    $color-grad-1--col-1 79%
+  );
+}
