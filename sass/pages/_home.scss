@@ -27,6 +27,9 @@
     $color-grad-1--col-1 14%,
     $color-primary-black 79%
   );
+  @include respond(tab-port) {
+    padding: 0 6rem 10rem 6rem;
+  }
 }
 .cta {
   padding: 0 10rem 10rem 10rem;

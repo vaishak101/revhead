@@ -9,6 +9,17 @@
     clip-path: circle(16% at 50% 50%);
   }
 }
+@keyframes openUpPhone {
+  0% {
+    clip-path: circle(0% at 50% 50%);
+  }
+  50% {
+    clip-path: circle(50% at 50% 50%);
+  }
+  100% {
+    clip-path: circle(19% at 50% 50%);
+  }
+}
 @keyframes FadeIn {
   0% {
     opacity: 0;
@@ -34,6 +45,18 @@
     background-color: $color-primary-black;
   }
 }
+@keyframes HeroImgSmPhone {
+  0% {
+    width: 420px;
+  }
+  90% {
+    width: 420px;
+  }
+  100% {
+    width: 250px;
+  }
+}
+
 @keyframes HeroImg {
   0% {
     width: 520px;

@@ -9,6 +9,17 @@
     clip-path: circle(16% at 50% 50%);
   }
 }
+@keyframes openUpPhone {
+  0% {
+    clip-path: circle(0% at 50% 50%);
+  }
+  50% {
+    clip-path: circle(50% at 50% 50%);
+  }
+  100% {
+    clip-path: circle(19% at 50% 50%);
+  }
+}
 @keyframes FadeIn {
   0% {
     opacity: 0;
@@ -32,6 +43,17 @@
   }
   100% {
     background-color: black;
+  }
+}
+@keyframes HeroImgSmPhone {
+  0% {
+    width: 420px;
+  }
+  90% {
+    width: 420px;
+  }
+  100% {
+    width: 250px;
   }
 }
 @keyframes HeroImg {
@@ -105,6 +127,16 @@ body {
   -webkit-background-clip: text;
   color: transparent;
 }
+@media (max-width: 37.5em) {
+  .secondary-heading--ft {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 37.5em) {
+  .secondary-heading--ft {
+    font-size: 1.5rem;
+  }
+}
 
 .header__heading {
   width: 100%;
@@ -115,6 +147,26 @@ body {
   bottom: 0%;
   text-shadow: 0.3rem 0.5rem 2rem black;
   animation: FadeIn 12s;
+}
+@media (max-width: 75em) {
+  .header__heading {
+    font-size: 8rem;
+  }
+}
+@media (max-width: 56.25em) {
+  .header__heading {
+    font-size: 7rem;
+  }
+}
+@media (max-width: 37.5em) {
+  .header__heading {
+    font-size: 6rem;
+  }
+}
+@media (max-width: 28.25em) {
+  .header__heading {
+    font-size: 4rem;
+  }
 }
 
 .u-center-text {
@@ -265,6 +317,13 @@ body {
 
 .ft-cont {
   display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 56.25em) {
+  .ft-cont {
+    flex-direction: column;
+  }
 }
 
 .ft__figure--img {
@@ -300,6 +359,21 @@ body {
   transition: transform 0.3s ease;
   backface-visibility: hidden;
 }
+@media (max-width: 56.25em) {
+  .ft__options {
+    width: 15rem;
+  }
+}
+@media (max-width: 37.5em) {
+  .ft__options {
+    width: 12rem;
+  }
+}
+@media (max-width: 28.25em) {
+  .ft__options {
+    width: 8rem;
+  }
+}
 .ft__options--1 {
   top: 8%;
   left: 0%;
@@ -327,6 +401,58 @@ body {
 .ft__options:hover {
   transform: scale(1.1);
 }
+@media (max-width: 37.5em) {
+  .ft__options--1 {
+    top: 8%;
+    left: 0%;
+  }
+  .ft__options--2 {
+    top: 8%;
+    left: 30%;
+  }
+  .ft__options--3 {
+    top: 8%;
+    left: 60%;
+  }
+  .ft__options--4 {
+    top: 24%;
+    left: 15%;
+  }
+  .ft__options--5 {
+    top: 24%;
+    left: 45%;
+  }
+  .ft__options--6 {
+    top: 40%;
+    left: 30%;
+  }
+}
+@media (max-width: 28.25em) {
+  .ft__options--1 {
+    top: 8%;
+    left: 0%;
+  }
+  .ft__options--2 {
+    top: 8%;
+    left: 34%;
+  }
+  .ft__options--3 {
+    top: 8%;
+    left: 68%;
+  }
+  .ft__options--4 {
+    top: 20%;
+    left: 18%;
+  }
+  .ft__options--5 {
+    top: 20%;
+    left: 52%;
+  }
+  .ft__options--6 {
+    top: 30%;
+    left: 35%;
+  }
+}
 
 .ft__figure--img {
   height: 100%;
@@ -344,6 +470,21 @@ body {
   transform: translate(-50%, 20%);
   opacity: 0;
   transition: all 0.5s ease;
+}
+@media (max-width: 56.25em) {
+  .ft__figure--caption {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 37.5em) {
+  .ft__figure--caption {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 28.25em) {
+  .ft__figure--caption {
+    font-size: 0.5rem;
+  }
 }
 .ft__figure:hover .ft__figure--img {
   filter: blur(3px) brightness(50%);
@@ -629,6 +770,12 @@ body {
   clip-path: circle(16% at 50% 50%);
   position: relative;
 }
+@media (max-width: 37.5em) {
+  .hero {
+    animation: openUpPhone 9s;
+    clip-path: circle(19% at 50% 50%);
+  }
+}
 
 .background-video {
   width: 100vw;
@@ -646,6 +793,12 @@ body {
   width: 330px;
   animation: HeroImg 9.5s;
 }
+@media (max-width: 28.25em) {
+  .hero-img {
+    animation: HeroImgSmPhone 9.5s;
+    width: 250px;
+  }
+}
 
 .hero-img-cont {
   position: absolute;
@@ -662,6 +815,12 @@ body {
   z-index: -1;
   animation: FadeOut 24s ease;
   animation-iteration-count: infinite;
+}
+@media (max-width: 28.25em) {
+  .hero-img-cont {
+    width: 300px;
+    height: 300px;
+  }
 }
 
 .hero-heading {
@@ -795,6 +954,11 @@ body {
 .accessories {
   padding: 0 10rem 10rem 10rem;
   background-image: linear-gradient(0deg, #5f0a87 14%, black 79%);
+}
+@media (max-width: 56.25em) {
+  .accessories {
+    padding: 0 6rem 10rem 6rem;
+  }
 }
 
 .cta {

@@ -18,6 +18,10 @@
   animation: openUp 9s;
   clip-path: circle(16% at 50% 50%);
   position: relative;
+  @include respond(phone) {
+    animation: openUpPhone 9s;
+    clip-path: circle(19% at 50% 50%);
+  }
 }
 .background-video {
   width: 100vw;
@@ -33,6 +37,10 @@
 .hero-img {
   width: 330px;
   animation: HeroImg 9.5s;
+  @include respond(small-phone) {
+    animation: HeroImgSmPhone 9.5s;
+    width: 250px;
+  }
 }
 .hero-img-cont {
   position: absolute;
@@ -47,6 +55,10 @@
   z-index: -1;
   animation: FadeOut 24s ease;
   animation-iteration-count: infinite;
+  @include respond(small-phone) {
+    width: 300px;
+    height: 300px;
+  }
 }
 
 .hero-heading {
