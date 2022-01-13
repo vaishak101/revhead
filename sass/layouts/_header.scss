@@ -39,7 +39,7 @@
   animation: HeroImg 9.5s;
   @include respond(small-phone) {
     animation: HeroImgSmPhone 9.5s;
-    width: 250px;
+    width: 200px;
   }
 }
 .hero-img-cont {
@@ -56,18 +56,24 @@
   animation: FadeOut 24s ease;
   animation-iteration-count: infinite;
   @include respond(small-phone) {
-    width: 300px;
-    height: 300px;
+    width: 220px;
+    height: 220px;
   }
 }
 
 .hero-heading {
   color: $color-primary-white;
   animation: FadeIn 10s;
+  @include respond(small-phone) {
+    font-size: 1.2rem;
+  }
 }
 .para {
-  font-size: 12px;
+  font-size: 1.2rem;
   letter-spacing: 0.2rem;
   color: $color-primary-white;
   animation: FadeIn 11s;
+  @include respond(small-phone) {
+    font-size: 0.5rem;
+  }
 }

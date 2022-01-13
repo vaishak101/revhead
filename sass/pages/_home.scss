@@ -1,7 +1,6 @@
 .container {
   max-width: 114rem;
   padding: 3rem 2rem;
-  // height: 100rem;
   margin: 0 auto;
 }
 
@@ -12,13 +11,21 @@
     $color-grad-1--col-1 95%
   );
   padding-bottom: 25rem;
+  @include respond(phone) {
+    padding-bottom: 2rem;
+  }
 }
 .customs {
   padding: 4rem 0 10rem 0;
   background-image: url(/img/c-bikes/custom-bg.webp);
   background-position: center;
   background-size: cover;
-  // padding-bottom: 10rem;
+  @include respond(phone) {
+    padding: 0 3rem 5rem 3rem;
+  }
+  @include respond(tab-port) {
+    padding: 0 2rem 2rem 2rem;
+  }
 }
 .accessories {
   padding: 0 10rem 10rem 10rem;
@@ -30,6 +37,12 @@
   @include respond(tab-port) {
     padding: 0 6rem 10rem 6rem;
   }
+  @include respond(phone) {
+    padding: 0 3rem 10rem 3rem;
+  }
+  @include respond(small-phone) {
+    padding: 0 2rem 10rem 2rem;
+  }
 }
 .cta {
   padding: 0 10rem 10rem 10rem;
@@ -39,4 +52,10 @@
     $color-primary-black 14%,
     $color-grad-1--col-1 79%
   );
+  @include respond(tab-port) {
+    padding: 0 6rem 10rem 6rem;
+  }
+  @include respond(phone) {
+    padding: 0 3rem 10rem 3rem;
+  }
 }

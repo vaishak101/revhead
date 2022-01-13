@@ -33,6 +33,21 @@
       transform: translate(50%, -50%);
       clip-path: polygon(100% 50%, 0 100%, 0 0);
     }
+
+    @include respond(phone) {
+      height: 4.5rem;
+      width: 4.5rem;
+    }
+    @include respond(small-phone) {
+      height: 3rem;
+      width: 3rem;
+    }
+  }
+  @include respond(phone) {
+    height: 40vh;
+  }
+  @include respond(small-phone) {
+    height: 30vh;
   }
 }
 
@@ -54,6 +69,12 @@
     align-items: center;
     flex-direction: column;
   }
+  @include respond(phone) {
+    height: 35vh;
+  }
+  @include respond(small-phone) {
+    height: 25vh;
+  }
 }
 .details-box {
   display: flex;
@@ -74,11 +95,49 @@
     font-size: 1.5rem;
     color: $color-yellow;
   }
+  @include respond(small-phone) {
+    gap: 1rem;
+    &--h1 {
+      color: $color-red;
+      font-size: 1.5rem;
+    }
+    &--num {
+      color: $color-purple-light;
+      font-size: 1.2rem;
+    }
+    &--span {
+      font-size: 1rem;
+      color: $color-yellow;
+    }
+  }
 }
 .custom__img {
   width: 70rem;
   transition: width 0.5s;
   &:hover {
     width: 75rem;
+  }
+  @include respond(tab-port) {
+    width: 60rem;
+    transition: width 0.5s;
+    &:hover {
+      width: 61rem;
+      z-index: 12;
+    }
+  }
+  @include respond(phone) {
+    width: 40rem;
+    transition: width 0.5s;
+    &:hover {
+      width: 42rem;
+      z-index: 12;
+    }
+  }
+  @include respond(phone) {
+    width: 25rem;
+    transition: width 0.5s;
+    &:hover {
+      width: 25rem;
+    }
   }
 }

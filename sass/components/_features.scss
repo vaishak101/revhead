@@ -23,6 +23,10 @@
   @include respond(tab-port) {
     flex-direction: column;
   }
+
+  @include respond(phone) {
+    gap: 3rem;
+  }
 }
 .ft__figure--img {
   width: 100%;
@@ -34,6 +38,12 @@
   transition: all 0.4s ease;
   &:hover {
     filter: drop-shadow(0 1rem 5rem $color-purple-light);
+  }
+  @include respond(phone) {
+    height: 30rem;
+  }
+  @include respond(small-phone) {
+    width: 20rem;
   }
 }
 .features__display {
