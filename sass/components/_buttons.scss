@@ -25,3 +25,28 @@
     outline: 5px solid $color-purple-light;
   }
 }
+.scrollUp {
+  position: fixed;
+  z-index: 1000;
+  bottom: 5%;
+  right: 5%;
+  // padding: 1rem 2rem;
+  padding: 1.2rem 0;
+  width: 5rem;
+  height: 5rem;
+  font-size: 2rem;
+  border: none;
+  border-radius: 50%;
+  color: $color-purple-light;
+  background-color: $color-primary-black;
+  transition: background 0.5s ease;
+  &:hover {
+    background-color: #63a4ff;
+    background-image: linear-gradient(315deg, #63a4ff 0%, #83eaf1 74%);
+  }
+}
+.hide {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}

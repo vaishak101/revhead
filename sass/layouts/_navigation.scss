@@ -5,6 +5,7 @@
   width: 100%;
   padding: 3rem 3.5rem;
   animation: FadeIn 12s;
+  z-index: 8;
   &__ul {
     @include flex-space-bw;
   }

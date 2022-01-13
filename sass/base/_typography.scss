@@ -19,7 +19,17 @@
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  &--ft {
-    // display: none;
-  }
+  // &--ft {
+  //   // display: none;
+  // }
+}
+.header__heading {
+  width: 100%;
+  font-size: 10rem;
+  color: $color-grad-1--col-1;
+  z-index: 1;
+  position: absolute;
+  bottom: 0%;
+  text-shadow: 0.3rem 0.5rem 2rem$color-primary-black;
+  animation: FadeIn 12s;
 }
