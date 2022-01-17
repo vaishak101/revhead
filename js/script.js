@@ -1,4 +1,4 @@
-//FEATURES
+//FEATURES display image
 const displayImage = document.querySelector('.features__display--img');
 const displayH2 = document.querySelectorAll('.secondary-heading--ft');
 const setDisplay = function (num) {
@@ -63,7 +63,7 @@ document.addEventListener('keydown', function (e) {
     nextSlide();
   }
 });
-//CTA
+//CTA show text when user clicks on images
 const ctaCont = document.querySelector('.form_img--cont');
 const Imglabel = document.querySelector('.form__label--img');
 ctaCont.addEventListener('click', function (e) {
@@ -77,11 +77,9 @@ ctaCont.addEventListener('click', function (e) {
 document.querySelector('.nav__ul').addEventListener('click', function (e) {
   if (e.target.classList.contains('nav__link')) {
     e.preventDefault();
-    // hideMobNav();
     let id = e.target.getAttribute('href');
     let sid = document.querySelector(id);
     let idcord = sid.getBoundingClientRect();
-    // revealSection();
     window.scrollTo({
       left: idcord.left + window.pageXOffset,
       top: idcord.top + window.pageYOffset,
@@ -90,23 +88,19 @@ document.querySelector('.nav__ul').addEventListener('click', function (e) {
   }
 });
 //sticky btn
+const nav = document.querySelector('.scrollUp');
+const header = document.querySelector('.header');
 //onclick
 document.querySelector('.scrollUp').addEventListener('click', function (e) {
   e.preventDefault();
-  // hideMobNav();
-  let id = e.target.getAttribute('href');
-  let sid = document.querySelector(id);
-  let idcord = sid.getBoundingClientRect();
-  // revealSection();
+  //gets co-ordinate of header for smooth scroll
+  let idcord = header.getBoundingClientRect();
   window.scrollTo({
     left: idcord.left + window.pageXOffset,
     top: idcord.top + window.pageYOffset,
     behavior: 'smooth',
   });
 });
-//sticky
-const nav = document.querySelector('.scrollUp');
-const header = document.querySelector('.header');
 //....Functions
 const stickyNav = function (entries) {
   const [entry] = entries;
