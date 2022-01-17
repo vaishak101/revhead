@@ -112,7 +112,6 @@ const stickyNav = function (entries) {
   const [entry] = entries;
   if (!entry.isIntersecting) {
     nav.classList.remove('hide');
-    console.log('intersecting');
   } else {
     nav.classList.add('hide');
   }
