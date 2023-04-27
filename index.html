@@ -1,23 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
-    <script defer src="js/script.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bungee&family=Sarpanch:wght@600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="icon" type="image/png" href="img/favicon-16x16.png" />
 
-    <title>Revhead Motors</title>
-  </head>
-  <body>
-    <!-- *****************************************************************************Scroll Up button*************** -->
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/main.css" />
+  <script defer src="js/script.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Sarpanch:wght@600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="icon" type="image/png" href="img/favicon-16x16.png" />
+
+  <title>Revhead Motors</title>
+</head>
+<style>
+  .wrapper {
+    display: none;
+  }
+
+  /* html,
+  body {
+    height: 100%;
+  } */
+
+  .preload {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #000000;
+  }
+
+  .preload img {
+    width: 80px;
+  }
+</style>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"
+  integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+
+
+<body>
+
+  <div class="preload">
+    <img src="./img/loader.gif">
+  </div>
+
+  <div class="wrapper">
     <a href="#header" class="scrollUp u-center-text hide">
       <ion-icon name="caret-up-outline"></ion-icon>
     </a>
@@ -63,42 +97,23 @@
 
           <div class="ft-cont">
             <div class="features__display">
-              <img
-                src="img/features/f-1.webp"
-                class="features__display--img"
-                alt="features"
-              />
+              <img src="img/features/f-1.webp" class="features__display--img" alt="features" />
               <h2 class="secondary-heading secondary-heading--ft" data-num="1">
                 Revhead Custom Beasts !
               </h2>
-              <h2
-                class="secondary-heading secondary-heading--ft hide--ft"
-                data-num="2"
-              >
+              <h2 class="secondary-heading secondary-heading--ft hide--ft" data-num="2">
                 All customizations are legal!
               </h2>
-              <h2
-                class="secondary-heading secondary-heading--ft hide--ft"
-                data-num=""
-              >
+              <h2 class="secondary-heading secondary-heading--ft hide--ft" data-num="">
                 Rent a bike and start riding !
               </h2>
-              <h2
-                class="secondary-heading secondary-heading--ft hide--ft"
-                data-num="4"
-              >
+              <h2 class="secondary-heading secondary-heading--ft hide--ft" data-num="4">
                 High standard accessories !
               </h2>
-              <h2
-                class="secondary-heading secondary-heading--ft hide--ft"
-                data-num="5"
-              >
+              <h2 class="secondary-heading secondary-heading--ft hide--ft" data-num="5">
                 Group riding with group rental !
               </h2>
-              <h2
-                class="secondary-heading secondary-heading--ft hide--ft"
-                data-num="6"
-              >
+              <h2 class="secondary-heading secondary-heading--ft hide--ft" data-num="6">
                 We organize group rides Too !
               </h2>
             </div>
@@ -106,12 +121,7 @@
             <div class="ft__options--cont">
               <div class="ft__options ft__options--1">
                 <figure class="ft__figure">
-                  <img
-                    src="img/features/f-1.webp"
-                    class="ft__figure--img"
-                    data-num="1"
-                    alt="features-1"
-                  />
+                  <img src="img/features/f-1.webp" class="ft__figure--img" data-num="1" alt="features-1" />
                   <figcaption class="ft__figure--caption" data-num="1">
                     Custom Bikes
                   </figcaption>
@@ -119,12 +129,7 @@
               </div>
               <div class="ft__options ft__options--2">
                 <figure class="ft__figure">
-                  <img
-                    src="img/features/f-2.webp"
-                    class="ft__figure--img"
-                    data-num="2"
-                    alt="features-2"
-                  />
+                  <img src="img/features/f-2.webp" class="ft__figure--img" data-num="2" alt="features-2" />
                   <figcaption class="ft__figure--caption" data-num="2">
                     Authorized Customs
                   </figcaption>
@@ -132,12 +137,7 @@
               </div>
               <div class="ft__options ft__options--3">
                 <figure class="ft__figure">
-                  <img
-                    src="img/features/f-3.webp"
-                    class="ft__figure--img"
-                    data-num="3"
-                    alt="features-3"
-                  />
+                  <img src="img/features/f-3.webp" class="ft__figure--img" data-num="3" alt="features-3" />
                   <figcaption class="ft__figure--caption" data-num="3">
                     Rent Bikes
                   </figcaption>
@@ -146,12 +146,7 @@
 
               <div class="ft__options ft__options--4">
                 <figure class="ft__figure">
-                  <img
-                    src="img/features/f-4.webp"
-                    class="ft__figure--img"
-                    data-num="4"
-                    alt="features-4"
-                  />
+                  <img src="img/features/f-4.webp" class="ft__figure--img" data-num="4" alt="features-4" />
                   <figcaption class="ft__figure--caption" data-num="4">
                     Accessories
                   </figcaption>
@@ -159,12 +154,7 @@
               </div>
               <div class="ft__options ft__options--5">
                 <figure class="ft__figure">
-                  <img
-                    src="img/features/f-5.webp"
-                    class="ft__figure--img"
-                    data-num="5"
-                    alt="features-5"
-                  />
+                  <img src="img/features/f-5.webp" class="ft__figure--img" data-num="5" alt="features-5" />
                   <figcaption class="ft__figure--caption" data-num="5">
                     Group Rentals
                   </figcaption>
@@ -173,12 +163,7 @@
 
               <div class="ft__options ft__options--6">
                 <figure class="ft__figure">
-                  <img
-                    src="img/features/f-6.webp"
-                    class="ft__figure--img"
-                    data-num="6"
-                    alt="features-6"
-                  />
+                  <img src="img/features/f-6.webp" class="ft__figure--img" data-num="6" alt="features-6" />
                   <figcaption class="ft__figure--caption" data-num="6">
                     Group Rides
                   </figcaption>
@@ -198,11 +183,7 @@
           <div class="slider">
             <div class="slide">
               <div class="slide_content">
-                <img
-                  src="img/c-bikes/b-1.webp"
-                  class="custom__img"
-                  alt="Custom 1"
-                />
+                <img src="img/c-bikes/b-1.webp" class="custom__img" alt="Custom 1" />
                 <div class="details-box">
                   <div class="details-box--name">
                     <h1 class="details-box--h1">KAWASAKI z900</h1>
@@ -210,24 +191,18 @@
                   </div>
                   <div class="details-box--engine">
                     <h1 class="details-box--h1">Engine</h1>
-                    <span class="details-box--num">900</span
-                    ><span class="details-box--span">cc</span>
+                    <span class="details-box--num">900</span><span class="details-box--span">cc</span>
                   </div>
                   <div class="details-box--power">
                     <h1 class="details-box--h1">Max Power</h1>
-                    <span class="details-box--num">107.68</span
-                    ><span class="details-box--span">bhp</span>
+                    <span class="details-box--num">107.68</span><span class="details-box--span">bhp</span>
                   </div>
                 </div>
               </div>
             </div>
             <div class="slide">
               <div class="slide_content">
-                <img
-                  src="img/c-bikes/b-2.webp"
-                  class="custom__img"
-                  alt="custom-2"
-                />
+                <img src="img/c-bikes/b-2.webp" class="custom__img" alt="custom-2" />
                 <div class="details-box">
                   <div class="details-box--name">
                     <h1 class="details-box--h1">Yamaha MT01</h1>
@@ -235,24 +210,18 @@
                   </div>
                   <div class="details-box--engine">
                     <h1 class="details-box--h1">Engine</h1>
-                    <span class="details-box--num">1690</span
-                    ><span class="details-box--span">cc</span>
+                    <span class="details-box--num">1690</span><span class="details-box--span">cc</span>
                   </div>
                   <div class="details-box--power">
                     <h1 class="details-box--h1">Max Power</h1>
-                    <span class="details-box--num">90</span
-                    ><span class="details-box--span">bhp</span>
+                    <span class="details-box--num">90</span><span class="details-box--span">bhp</span>
                   </div>
                 </div>
               </div>
             </div>
             <div class="slide">
               <div class="slide_content">
-                <img
-                  src="img/c-bikes/b-3.webp"
-                  class="custom__img"
-                  alt="custom-3"
-                />
+                <img src="img/c-bikes/b-3.webp" class="custom__img" alt="custom-3" />
                 <div class="details-box">
                   <div class="details-box--name">
                     <h1 class="details-box--h1">Triumph</h1>
@@ -260,13 +229,11 @@
                   </div>
                   <div class="details-box--engine">
                     <h1 class="details-box--h1">Engine</h1>
-                    <span class="details-box--num">1200</span
-                    ><span class="details-box--span">cc</span>
+                    <span class="details-box--num">1200</span><span class="details-box--span">cc</span>
                   </div>
                   <div class="details-box--power">
                     <h1 class="details-box--h1">Max Power</h1>
-                    <span class="details-box--num">97</span
-                    ><span class="details-box--span">bhp</span>
+                    <span class="details-box--num">97</span><span class="details-box--span">bhp</span>
                   </div>
                 </div>
               </div>
@@ -287,11 +254,7 @@
             <div class="col-1-of-3">
               <div class="card">
                 <div class="card__side card__side--front">
-                  <img
-                    src="img/accessories/ac-1.webp"
-                    class="acc__img"
-                    alt="accessory-1"
-                  />
+                  <img src="img/accessories/ac-1.webp" class="acc__img" alt="accessory-1" />
                 </div>
                 <div class="card__side card__side--back card__side--back--1">
                   <h1 class="acc__name">Riding Suite</h1>
@@ -307,11 +270,7 @@
             <div class="col-1-of-3">
               <div class="card">
                 <div class="card__side card__side--front">
-                  <img
-                    src="img/accessories/ac-2.webp"
-                    class="acc__img"
-                    alt="accessory-2"
-                  />
+                  <img src="img/accessories/ac-2.webp" class="acc__img" alt="accessory-2" />
                 </div>
                 <div class="card__side card__side--back card__side--back--1">
                   <h1 class="acc__name">Riding Shoes</h1>
@@ -327,11 +286,7 @@
             <div class="col-1-of-3">
               <div class="card">
                 <div class="card__side card__side--front">
-                  <img
-                    src="img/accessories/ac-3.webp"
-                    class="acc__img"
-                    alt="accessory-3"
-                  />
+                  <img src="img/accessories/ac-3.webp" class="acc__img" alt="accessory-3" />
                 </div>
                 <div class="card__side card__side--back card__side--back--1">
                   <h1 class="acc__name">Helmets</h1>
@@ -356,60 +311,25 @@
         <div class="contact_form">
           <form action="#" class="form">
             <div class="form__group form__group--img">
-              <label class="form__label u-center-text"
-                >Select Motorcycle Type</label
-              >
+              <label class="form__label u-center-text">Select Motorcycle Type</label>
               <div class="form_img--cont">
-                <img
-                  src="img/cta/cta-1.webp"
-                  alt="Rent bike 1"
-                  class="cta--img"
-                  data-value="Sports"
-                /><img
-                  src="img/cta/cta-2.webp"
-                  alt="Rent Bike 2"
-                  class="cta--img"
-                  data-value="Cruiser"
-                /><img
-                  src="img/cta/cta-3.webp"
-                  alt="Rent Bike 3"
-                  class="cta--img"
-                  data-value="Street"
-                />
+                <img src="img/cta/cta-1.webp" alt="Rent bike 1" class="cta--img" data-value="Sports" /><img
+                  src="img/cta/cta-2.webp" alt="Rent Bike 2" class="cta--img" data-value="Cruiser" /><img
+                  src="img/cta/cta-3.webp" alt="Rent Bike 3" class="cta--img" data-value="Street" />
               </div>
-              <label class="form__label form__label--img u-center-text"
-                >Select from above options</label
-              >
+              <label class="form__label form__label--img u-center-text">Select from above options</label>
             </div>
             <div class="form__group u-margin-top-medium">
               <label for="first_name" class="form__label">First Name</label>
-              <input
-                type="text"
-                class="form__input"
-                id="first_name"
-                placeholder="Valentino"
-                required
-              />
+              <input type="text" class="form__input" id="first_name" placeholder="Valentino" required />
             </div>
             <div class="form__group u-margin-top-small">
               <label for="last_name" class="form__label">Last Name</label>
-              <input
-                type="text"
-                class="form__input"
-                id="last_name"
-                placeholder="Rossi"
-                required
-              />
+              <input type="text" class="form__input" id="last_name" placeholder="Rossi" required />
             </div>
             <div class="form__group u-margin-top-small">
               <label for="email" class="form__label">Email address</label>
-              <input
-                type="email"
-                class="form__input"
-                id="email"
-                placeholder="TheDoctor46@motoGP.com"
-                required
-              />
+              <input type="email" class="form__input" id="email" placeholder="TheDoctor46@motoGP.com" required />
             </div>
 
             <div class="form__group u-margin-top-medium">
@@ -423,8 +343,7 @@
     <footer class="footer">
       <div class="footer__logo-box u-center-text u-margin-bottom-big">
         <a href="#">
-          <img src="img/her.png" class="footer__logo" alt="CITAZ BANK Logo"
-        /></a>
+          <img src="img/her.png" class="footer__logo" alt="CITAZ BANK Logo" /></a>
         <a class="footer__img-name u-margin-top-small">REVHEAD MOTORS</a>
       </div>
       <div class="footer__link-box u-margin-bottom-medium">
@@ -449,23 +368,21 @@
       <div class="footer__text-box">
         <p class="footer__para">
           Built by
-          <a
-            href="https://vaishak101.netlify.app/"
-            target="_blank"
-            class="footer__link footer__link--name"
-          >
-            Vaishak Nair </a
-          >.
+          <a href="https://vaishak101.netlify.app/" target="_blank" class="footer__link footer__link--name">
+            Vaishak Nair </a>.
         </p>
       </div>
     </footer>
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
-  </body>
+  </div>
+  <!-- *****************************************************************************Scroll Up button*************** -->
+  <script>
+    $(window).on('load', function () {
+      $('.preload').fadeOut();
+      $('.wrapper').fadeIn();
+    });
+  </script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
 </html>

@@ -1,23 +1,29 @@
 @keyframes openUp {
   0% {
-    clip-path: circle(0% at 50% 50%);
+    -webkit-clip-path: circle(0% at 50% 50%);
+            clip-path: circle(0% at 50% 50%);
   }
   50% {
-    clip-path: circle(50% at 50% 50%);
+    -webkit-clip-path: circle(50% at 50% 50%);
+            clip-path: circle(50% at 50% 50%);
   }
   100% {
-    clip-path: circle(16% at 50% 50%);
+    -webkit-clip-path: circle(16% at 50% 50%);
+            clip-path: circle(16% at 50% 50%);
   }
 }
 @keyframes openUpPhone {
   0% {
-    clip-path: circle(0% at 50% 50%);
+    -webkit-clip-path: circle(0% at 50% 50%);
+            clip-path: circle(0% at 50% 50%);
   }
   50% {
-    clip-path: circle(50% at 50% 50%);
+    -webkit-clip-path: circle(50% at 50% 50%);
+            clip-path: circle(50% at 50% 50%);
   }
   100% {
-    clip-path: circle(19% at 50% 50%);
+    -webkit-clip-path: circle(19% at 50% 50%);
+            clip-path: circle(19% at 50% 50%);
   }
 }
 @keyframes FadeIn {
@@ -33,16 +39,16 @@
 }
 @keyframes FadeOut {
   0% {
-    background-color: black;
+    background-color: rgb(0, 0, 0);
   }
   50% {
-    background-color: black;
+    background-color: rgb(0, 0, 0);
   }
   75% {
     background-color: transparent;
   }
   100% {
-    background-color: black;
+    background-color: rgb(0, 0, 0);
   }
 }
 @keyframes HeroImgSmPhone {
@@ -165,7 +171,7 @@ body {
   z-index: 1;
   position: absolute;
   bottom: 0%;
-  text-shadow: 0.3rem 0.5rem 2rem black;
+  text-shadow: 0.3rem 0.5rem 2rem rgb(0, 0, 0);
   animation: FadeIn 12s;
 }
 @media (max-width: 75em) {
@@ -267,7 +273,7 @@ body {
 .acc__btn {
   padding: 1rem;
   border: none;
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   color: #8c34b4;
   letter-spacing: 0.2rem;
   transition: all 0.2s;
@@ -279,7 +285,7 @@ body {
 .cta__btn {
   padding: 3rem 2rem;
   border: none;
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   color: #8c34b4;
   font-size: 2rem;
   width: 100%;
@@ -305,7 +311,7 @@ body {
   border: none;
   border-radius: 50%;
   color: #d270ff;
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   transition: background 0.5s ease;
 }
 .scrollUp:hover {
@@ -389,7 +395,8 @@ body {
 
 .ft__options {
   width: 20rem;
-  clip-path: polygon(50% 4%, 85% 50%, 50% 96%, 15% 50%);
+  -webkit-clip-path: polygon(50% 4%, 85% 50%, 50% 96%, 15% 50%);
+          clip-path: polygon(50% 4%, 85% 50%, 50% 96%, 15% 50%);
   position: absolute;
   transition: transform 0.3s ease;
   backface-visibility: hidden;
@@ -562,12 +569,14 @@ body {
 .slider__btn--left {
   left: 6%;
   transform: translate(-50%, -50%);
-  clip-path: polygon(0 50%, 100% 100%, 100% 0);
+  -webkit-clip-path: polygon(0 50%, 100% 100%, 100% 0);
+          clip-path: polygon(0 50%, 100% 100%, 100% 0);
 }
 .slider__btn--right {
   right: 6%;
   transform: translate(50%, -50%);
-  clip-path: polygon(100% 50%, 0 100%, 0 0);
+  -webkit-clip-path: polygon(100% 50%, 0 100%, 0 0);
+          clip-path: polygon(100% 50%, 0 100%, 0 0);
 }
 @media (max-width: 37.5em) {
   .slider__btn {
@@ -740,7 +749,7 @@ body {
 }
 .acc__name {
   font-size: 3rem;
-  color: black;
+  color: rgb(0, 0, 0);
   font-weight: 900;
   letter-spacing: 0.2rem;
   transition: color 0.2s ease;
@@ -757,7 +766,7 @@ body {
 
 .footer {
   padding: 10rem 2rem;
-  background-image: linear-gradient(0deg, #5f0a87 14%, black 79%);
+  background-image: linear-gradient(0deg, #5f0a87 14%, rgb(0, 0, 0) 79%);
 }
 .footer__logo {
   border-radius: 50%;
@@ -767,7 +776,7 @@ body {
   display: block;
   font-weight: 900;
   letter-spacing: 0.7rem;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 .footer__link-box {
   padding: 0 4rem;
@@ -785,15 +794,14 @@ body {
   transition: all 0.2s ease;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
-.footer__link:link,
-.footer__link:visited {
-  color: white;
+.footer__link:link, .footer__link:visited {
+  color: rgb(255, 255, 255);
   text-decoration: none;
   font-size: 1.3rem;
   letter-spacing: 0.1rem;
 }
 .footer__link:hover {
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid rgb(255, 255, 255);
 }
 .footer__link--name:hover {
   font-weight: 900;
@@ -807,7 +815,7 @@ body {
   max-width: 80rem;
 }
 .footer__para {
-  color: white;
+  color: rgb(255, 255, 255);
   font-size: 1.1rem;
   font-weight: 200;
   word-spacing: 0.5rem;
@@ -835,20 +843,20 @@ body {
   display: table;
   clear: both;
 }
-.row [class^="col"] {
+.row [class^=col] {
   float: left;
 }
-.row [class^="col"]:not(:last-child) {
+.row [class^=col]:not(:last-child) {
   margin-right: 6rem;
 }
 @media (max-width: 37.5em) {
-  .row [class^="col"]:not(:last-child) {
+  .row [class^=col]:not(:last-child) {
     margin-right: 0;
     margin-bottom: 6rem;
   }
 }
 @media (max-width: 37.5em) {
-  .row [class^="col"] {
+  .row [class^=col] {
     width: 100% !important;
   }
 }
@@ -873,7 +881,7 @@ body {
 
 .header {
   height: 100vh;
-  background-image: linear-gradient(0deg, #5f0a87 14%, black 79%);
+  background-image: linear-gradient(0deg, #5f0a87 14%, rgb(0, 0, 0) 79%);
   overflow: hidden;
   position: relative;
 }
@@ -883,20 +891,23 @@ body {
   margin: 0 auto;
   max-width: 100rem;
   animation: openUp 9s;
-  clip-path: circle(16% at 50% 50%);
+  -webkit-clip-path: circle(16% at 50% 50%);
+          clip-path: circle(16% at 50% 50%);
   position: relative;
 }
 @media (max-width: 37.5em) {
   .hero {
     animation: openUpPhone 9s;
-    clip-path: circle(19% at 50% 50%);
+    -webkit-clip-path: circle(19% at 50% 50%);
+            clip-path: circle(19% at 50% 50%);
   }
 }
 
 .background-video {
   width: 100%;
   height: 100vh;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   position: absolute;
   left: 0;
   right: 0;
@@ -940,7 +951,7 @@ body {
 }
 
 .hero-heading {
-  color: white;
+  color: rgb(255, 255, 255);
   animation: FadeIn 10s;
 }
 @media (max-width: 28.25em) {
@@ -952,7 +963,7 @@ body {
 .para {
   font-size: 1.2rem;
   letter-spacing: 0.2rem;
-  color: white;
+  color: rgb(255, 255, 255);
   animation: FadeIn 11s;
 }
 @media (max-width: 28.25em) {
@@ -975,8 +986,7 @@ body {
   align-items: center;
   justify-content: space-around;
 }
-.nav__link:link,
-.nav__link:visited {
+.nav__link:link, .nav__link:visited {
   color: #8c34b4;
   text-decoration: none;
   font-size: 1.5rem;
@@ -984,13 +994,11 @@ body {
   font-weight: 700;
 }
 @media (max-width: 28.25em) {
-  .nav__link:link,
-  .nav__link:visited {
+  .nav__link:link, .nav__link:visited {
     font-size: 1rem;
   }
 }
-.nav__link:hover,
-.nav__link:active {
+.nav__link:hover, .nav__link:active {
   color: #d270ff;
   border-bottom: 3px solid #d270ff;
 }
@@ -1054,7 +1062,7 @@ body {
   width: 100%;
   display: block;
   color: #8c34b4;
-  background: black;
+  background: rgb(0, 0, 0);
   transition: all 0.2s ease-out;
 }
 .form__input:focus {
@@ -1062,7 +1070,7 @@ body {
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
   border-bottom: 3px solid greenyellow;
   color: greenyellow;
-  background: black;
+  background: rgb(0, 0, 0);
 }
 .form__input:focus:invalid {
   color: red;
@@ -1108,7 +1116,7 @@ body {
 }
 
 .features {
-  background-image: linear-gradient(0deg, black 5%, #5f0a87 95%);
+  background-image: linear-gradient(0deg, rgb(0, 0, 0) 5%, #5f0a87 95%);
   padding-bottom: 25rem;
 }
 @media (max-width: 37.5em) {
@@ -1136,7 +1144,7 @@ body {
 
 .accessories {
   padding: 0 10rem 10rem 10rem;
-  background-image: linear-gradient(0deg, #5f0a87 14%, black 79%);
+  background-image: linear-gradient(0deg, #5f0a87 14%, rgb(0, 0, 0) 79%);
 }
 @media (max-width: 56.25em) {
   .accessories {
@@ -1156,7 +1164,7 @@ body {
 
 .cta {
   padding: 0 10rem 10rem 10rem;
-  background-image: linear-gradient(0deg, black 14%, #5f0a87 79%);
+  background-image: linear-gradient(0deg, rgb(0, 0, 0) 14%, #5f0a87 79%);
 }
 @media (max-width: 56.25em) {
   .cta {
@@ -1167,6 +1175,4 @@ body {
   .cta {
     padding: 0 3rem 10rem 3rem;
   }
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=main.css.map */
